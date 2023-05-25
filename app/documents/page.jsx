@@ -1,4 +1,4 @@
-'use client';
+'use client'
 import { useRef, useState } from 'react'
 import { FileUpload } from 'primereact/fileupload'
 import { Toast } from 'primereact/toast'
