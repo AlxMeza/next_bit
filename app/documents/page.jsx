@@ -49,7 +49,7 @@ export default function Documents (){
                 {chooseButton}
                 {uploadButton}
                 {cancelButton}
-                <ProgressBar value={value} displayValueTemplate={() => `${formatedValue} / 1 MB`} style={{width: '300px', height: '20px', marginLeft: 'auto', border: '1px solid #6366f1'}}></ProgressBar>
+                <ProgressBar value={value} displayValueTemplate={() => `${formatedValue} / 20 MB`} style={{width: '300px', height: '20px', marginLeft: 'auto', border: '1px solid #6366f1'}}></ProgressBar>
             </div>
         );
     }
@@ -100,7 +100,7 @@ export default function Documents (){
                 }} >Cargar Archivo Clientes</button>
             </section>
             <div className='py-10 mt-5 mx-auto lg:px-0 px-10 lg:w-1/2 md:w-4/5 w-full'>
-                <FileUpload ref={fileUploadRef} name='files[]' url={url} accept='.csv' maxFileSize={1000000} onUpload={onTemplateUpload} onSelect={onTemplateSelect}
+                <FileUpload ref={fileUploadRef} name='files[]' url={url} accept='.csv' maxFileSize={20000000} onUpload={onTemplateUpload} onSelect={onTemplateSelect}
                     onError={onTemplateError} onClear={onTemplateClear} headerTemplate={headerTemplate} itemTemplate={itemTemplate} emptyTemplate={emptyTemplate}
                     chooseOptions={chooseOptions} uploadOptions={uploadOptions} cancelOptions={cancelOptions} className='border border-gray-400 rounded-md'/>
             </div>
